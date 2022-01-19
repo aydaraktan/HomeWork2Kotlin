@@ -2,7 +2,6 @@ package kg.geektech.homework2kotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import kg.geektech.homework2kotlin.databinding.ActivityMainBinding
 import kg.geektech.homework2kotlin.databinding.ActivityMainBinding.*
 import java.util.*
@@ -26,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.submit.setOnClickListener {
             if(url.isBlank()){
-                showToast("введите url")
+                showToast(getString(R.string.url))
             }else{
             urls.add(url.toString())
             binding.editText.text = null}

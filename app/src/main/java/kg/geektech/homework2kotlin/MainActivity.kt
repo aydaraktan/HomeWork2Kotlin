@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.submit.setOnClickListener {
             if(url.isBlank()){
-                Toast.makeText(this,getString(R.string.inputUrl),Toast.LENGTH_SHORT).show()
+                showToast("введите url")
             }else{
             urls.add(url.toString())
             binding.editText.text = null}

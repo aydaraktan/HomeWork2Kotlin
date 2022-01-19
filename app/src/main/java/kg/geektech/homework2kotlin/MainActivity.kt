@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var urls = mutableListOf("https://yablyk.com/wp-content/uploads/2018/04/shoten-links.jpg","https://bipbap.ru/wp-content/uploads/2017/04/priroda_kartinki_foto_03.jpg","https://bipbap.ru/wp-content/uploads/2017/04/kuukktsk.jpg",
+        val urls = mutableListOf("https://yablyk.com/wp-content/uploads/2018/04/shoten-links.jpg","https://bipbap.ru/wp-content/uploads/2017/04/priroda_kartinki_foto_03.jpg","https://bipbap.ru/wp-content/uploads/2017/04/kuukktsk.jpg",
         "https://russianblogs.com/images/103/69f223e82b33c342199241d463664907.png","https://ktonanovenkogo.ru/image/sokrashchenie-ssilok.jpg")
 
         binding.random.setOnClickListener {
